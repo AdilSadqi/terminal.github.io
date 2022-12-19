@@ -1,0 +1,154 @@
+var discord = "https://discord.com/users/AdilSadqi#6482";
+var instagram = "https://www.instagram.com/sadqi.adil";
+var twitter = "https://www.twitter.com/adilsadqi/";
+var password = "ascodes";
+var adil = "adil";
+var Adil = "Adil";
+var ADIL = "ADIL";
+var jaber = "jaber";
+var whatsapp = "https://wa.link/p8dhsa";
+var phone = "tel:+212624489471";
+var email = 'mailto:adil@asadqi.com';
+var website = 'https://web.adil.asadqi.com';
+var cloud = "https://cloud.asadqi.com";
+var instagramjb = "https://www.instagram.com/sadqi.jpeg";
+var curl = '';
+
+whois = [
+  "<br>",
+  "Hey, I'm Adil!👋",
+  "Since 1998 I’ve start learning about computer and programing and on this page you will find all what i have learned in the past years until now",
+  "And this Website created by me and I’ve name it Terminal because this is like my knowledge Terminal and to put all my experience on this page ",
+  "And the purpose of building this site is just to let people know more about me and keep in touch with my Friends and with who i know and everyone interesting to contact me ",
+  "with a simple design and new look website.",
+  "And I’ve used to build this website HTML ",
+  "PHP and CSS with some animation to keep it lightweight site.",
+  "Please feel free to contact me if you have anything for me to say 😉",
+
+  "<br>"
+];
+
+jb = [
+  "<br>",
+  "The first person who discovered this terminal!👋",
+  "<br>"
+];
+
+weather = [
+  "<div class=\"color2\">",
+  '<iframe async src="https://wttr.in/kenitra" scrolling="no" width="100%" height="585" frameborder="0" class="color2"></iframe>',
+
+  "<div>"
+];
+
+
+
+update = [
+  "<br>",
+  "Checking...",
+  "Downloading Update...",
+  "==========>10%",  
+  "====================>20%",  
+  "==============================>30%",  
+  "========================================>40%",  
+  "==================================================>50%",  
+  "============================================================>60%",  
+  "======================================================================>70%",  
+  "================================================================================>80%",  
+  "==========================================================================================90%",  
+  "====================================================================================================>100%",
+  "Update Terminal...",
+  "Finishing Installation...",
+  "Done",
+  "<br>"
+];
+
+whoami = [
+  "<br>",
+  "The paradox of “Who am I?” is: we never know, but, we constantly find out.",
+  "<br>"
+];
+
+social = [
+  "<br>",
+
+  'discord        <a href="' + discord + '" target="_blank">discord/adilsadqi' + '</a>',
+  'instagram      <a href="' + instagram + '" target="_blank">instagram/adilsadqi' + '</a>',
+  'twitter        <a href="' + twitter + '" target="_blank">twitter/adilsadqi' + '</a>',
+  'whatsapp       <a href="' + whatsapp + '" target="_blank">whatsapp/adilsadqi' + "</a>",
+  'phone          <a href="' + phone + '" target="_blank">phone/number' + "</a>",
+  'website        <a href="' + website + '" target="_blank">webpage/adilsadqi' + "</a>",
+  
+  "<br>"
+];
+socialjb = [
+  "<br>",
+
+  'instagram      <a href="' + instagramjb + '" target="_blank">instagram/jabersadqi' + '</a>',
+
+  
+  "<br>"
+];
+secret = [
+  "<br>",
+  '<span class="command">sudo</span>           Only use if you\'re admin',
+  "<br>"
+];
+
+projects = [
+  "<br>",
+  "Still Learning... But here is some projects i did in the past :",
+  "ROUTER ON RASPBERRY PI, AUTOMATION ON RASPBERRY PI, CUSTOMIZE OS ON VM, SERVER CREATION ON RASPBERRY PI AND VM, BOTS CREATION, WEBSITE CREATION, CLOUD CREATION.",
+  
+  "<br>"
+];
+
+help = [
+  "<br>",
+  '<span class="command">whois</span>          Who is Adil?',
+  '<span class="command">whoami</span>         Who are you?',
+  '<span class="command">website</span>        Webpage version',
+  '<span class="command">social</span>         Display social networks',
+  '<span class="command">secret</span>         Find the password',
+  '<span class="command">projects</span>       View coding projects',
+  '<span class="command">history</span>        View command history',
+  '<span class="command">help</span>           You obviously already know what this does',
+  '<span class="command">email</span>          Do not email me ;)',
+  '<span class="command">clear</span>          Clear terminal',
+  '<span class="command">banner</span>         Display the header',
+  "<br>",
+];
+
+root = [
+  "<br>",
+  '<span class="command">update</span>         Update terminal',
+  '<span class="command">close</span>          Close this page',
+  '<span class="command">exit</span>           Exit from terminal',
+  '<span class="command">history</span>        View command history',
+  '<span class="command">help</span>           This is what you need if you get lost',
+  '<span class="command">clear</span>          Clear terminal',
+  '<span class="command">version</span>        Check teminal version',
+  '<span class="command">sudo</span>           Check it out',
+  '<span class="command">creator</span>        Author and creator of this terminal',
+  '<span class="command">sadqi</span>          Look for specific name in Sadqi family',
+  '<span class="command">weather</span>        Check local weather in realtime',
+  "<br>",
+]
+
+banner = [
+  '<span class="index">Adil Sadqi Not A Corporation. No Rights reserved.</span>',
+
+  "                                                                     ",
+
+  "   █████╗ ██████╗ ██╗██╗         ███████╗ █████╗ ██████╗  ██████╗ ██╗",
+  "  ██╔══██╗██╔══██╗██║██║         ██╔════╝██╔══██╗██╔══██╗██╔═══██╗██║",
+  "  ███████║██║  ██║██║██║         ███████╗███████║██║  ██║██║   ██║██║",
+  "  ██╔══██║██║  ██║██║██║         ╚════██║██╔══██║██║  ██║██║▄▄ ██║██║",
+  "  ██║  ██║██████╔╝██║███████╗    ███████║██║  ██║██████╔╝╚██████╔╝██║",
+  "  ╚═╝  ╚═╝╚═════╝ ╚═╝╚══════╝    ╚══════╝╚═╝  ╚═╝╚═════╝  ╚══▀▀═╝ ╚═╝ ©",
+  "                                                                     ",
+
+  "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+  '<span class="color2">Welcome to my interactive web terminal.</span>',
+  "<span class=\"color2\">For a list of available commands, type</span> <span class=\"command\">'help'</span><span class=\"color2\"><span class=\"color2\">Or type </span> <span class=\"command\">'website'</span><span class=\"color2\"><span class=\"color2\"> For regulare website. </span></span>",
+];
