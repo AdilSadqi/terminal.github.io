@@ -14,6 +14,7 @@ let wrr = false;
 let wrdd = false;
 var commands = [];
 
+
 setTimeout(function() {
   loopLines(banner, "", 80);
   textarea.focus();
@@ -65,57 +66,45 @@ function enterKey(e) {
       liner.classList.remove("password");
     }
   } 
-    else if (wr) {
+ if (wr) {
+  // Set the command text to the value of the textarea
+  command.innerHTML = textarea.value;
 
-    command.innerHTML = textarea.value;
-    if (textarea.value === adil) {
-      wrd = true;
-    }
-	if (textarea.value === Adil) {
-      wrd = true;
-    }
-	if (textarea.value === ADIL) {
-      wrd = true;
-    }
-	if (textarea.value === jaber) {
-      wrdd = true;
-    }
-    if (wrd && e.keyCode == 13) {
-      loopLines(whois, social, "color2 margin", 120);
-	  loopLines(social, "color2 margin", 120);
-	  command.innerHTML = "";
-      textarea.value = "";
-      wrd = false;
-      wr = false;
-      liner.classList.remove("who");
-    }
-    if (wrd && e.keyCode == 13) {
-      loopLines(whois, social, "color2 margin", 120);
-	  loopLines(social, "color2 margin", 120);
-	  command.innerHTML = "";
-      textarea.value = "";
-      wrd = false;
-      wr = false;
-      liner.classList.remove("who");
-    }
-	if (wrdd && e.keyCode == 13) {
-      loopLines(jb, "color2 margin", 120);
-	  loopLines(socialjb, "color2 margin", 120);
-	  command.innerHTML = "";
-      textarea.value = "";
-      wrdd = false;
-      wrr = false;
-      liner.classList.remove("who");
-    } else if (e.keyCode == 13) {
-      addLine("We don't know anything about this person yet", "error", 0);
-      command.innerHTML = "";
-      textarea.value = "";
-      wrr = false;
-	  wr = false;
-      liner.classList.remove("who");
-	  
-    }
+  // Check if the textarea value matches any of the expected values
+  if (textarea.value === adil || textarea.value === Adil || textarea.value === ADIL) {
+    wrd = true;
+  } else if (textarea.value === jaber) {
+    wrdd = true;
   }
+
+  // If the textarea value matches, execute the appropriate function
+  if (wrd && e.keyCode == 13) {
+    loopLines(whois, social, "color2 margin", 120);
+    loopLines(social, "color2 margin", 120);
+    command.innerHTML = "";
+    textarea.value = "";
+    wrd = false;
+    wr = false;
+    liner.classList.remove("who");
+  } else if (wrdd && e.keyCode == 13) {
+    loopLines(jb, "color2 margin", 120);
+    loopLines(socialjb, "color2 margin", 120);
+    command.innerHTML = "";
+    textarea.value = "";
+    wrdd = false;
+    wrr = false;
+    liner.classList.remove("who");
+  } else if (e.keyCode == 13) {
+    // If the textarea value doesn't match, display an error message
+    addLine("We don't know anything about this person yet", "error", 0);
+    command.innerHTML = "";
+    textarea.value = "";
+    wrr = false;
+    wr = false;
+    liner.classList.remove("who");
+  }
+}
+
   
   else {
     if (e.keyCode == 13) {
@@ -190,7 +179,7 @@ function commander(cmd) {
       loopLines(help, "color2 margin", 80);
       break;
 	  case "version":
-      addLine("ASCODES v2.6.3", "color2", 80);
+      addLine("ASCODES v2.8.0", "color2", 80);
       setTimeout(function() {
       },800); 
       break;
@@ -199,21 +188,32 @@ function commander(cmd) {
       setTimeout(function() {
       },800); 
       break;
-	  case "exit":
-      addLine("Thank you for your visit, Good Bye...", "color2", 80);
+    case "exit":
+      addLine("Thank you for your visit. Goodbye!", "color2", 80);
       setTimeout(function() {
-        window.close('https://adil.asadqi.com');
-      }, 2500); 
+      window.open('','_parent','');
+      window.setTimeout(function() {
+      window.location.href = 'about:blank';
+      window.close();
+    }, 500);
+     }, 2500);
       break;
-	  case "close":
-      addLine("Thank you for your visit, Good Bye..", "color2", 80);
+    case "close":
+      addLine("Thank you for your visit. Goodbye!", "color2", 80);
       setTimeout(function() {
-        window.close('https://adil.asadqi.com');
-      }, 2500); 
+      window.open('','_parent','');
+      window.setTimeout(function() {
+      window.location.href = 'about:blank';
+      window.close();
+    }, 500);
+     }, 2500);
       break;
     case "update":
       loopLines(update, "color2 margin", 1000);
-	  break;
+      setTimeout(function() {
+      location.reload();
+    }, 17000);
+      break;
     case "social":
       loopLines(social, "color2 margin", 80);
       break;
