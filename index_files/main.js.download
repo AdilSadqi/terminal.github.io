@@ -149,6 +149,9 @@ function commander(cmd) {
     case "help":
       loopLines(help, "color2 margin", 80);
       break;
+	case "menu":
+      loopLines(help, "color2 margin", 80);
+      break;
 	case "root":
       loopLines(root, "color2 margin", 80);
       break;
