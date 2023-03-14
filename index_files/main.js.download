@@ -3,6 +3,7 @@ var liner = document.getElementById("liner");
 var command = document.getElementById("typer"); 
 var textarea = document.getElementById("texter"); 
 var terminal = document.getElementById("terminal");
+document.addEventListener('contextmenu', event => event.preventDefault());
 
 var git = 0;
 var pw = false;
