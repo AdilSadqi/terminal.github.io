@@ -9,7 +9,7 @@ var jaber = "jaber";
 var whatsapp = "https://wa.link/p8dhsa";
 var phone = "tel:+212624489471";
 var email = 'mailto:adil@asadqi.com';
-var windows = 'https://win.asadqi.com';
+var website = 'https://win.asadqi.com';
 var cloud = "https://cloud.asadqi.com";
 var instagramjb = "https://www.instagram.com/sadqi.jpeg";
 var curl = '';
@@ -93,7 +93,7 @@ social = [
   'twitter        <a href="' + twitter + '" target="_blank">twitter/adilsadqi' + '</a>',
   'whatsapp       <a href="' + whatsapp + '" target="_blank">whatsapp/adilsadqi' + "</a>",
   'phone          <a href="' + phone + '" target="_blank">phone/number' + "</a>",
-  'website        <a href="' + website + '" target="_blank">webpage/adilsadqi' + "</a>",
+
   
   "<br>"
 ];
@@ -123,7 +123,7 @@ help = [
   "<br>",
   '<span class="command">whois</span>          Who is Adil?',
   '<span class="command">whoami</span>         Who are you?',
-  '<span class="command">website</span>        Webpage version',
+  '<span class="command">windows</span>        Windows Sadqi',
   '<span class="command">social</span>         Display social networks',
   '<span class="command">secret</span>         Find the password',
   '<span class="command">projects</span>       View coding projects',
@@ -166,5 +166,5 @@ banner = [
 
   "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
   '<span class="color2">Welcome to my interactive web terminal.</span>',
-  "<span class=\"color2\">For a list of available commands, type</span> <span class=\"command\">'help'</span><span class=\"color2\"><span class=\"color2\"> Or type </span> <span class=\"command\">'windows'</span><span class=\"color2\"><span class=\"color2\"> For windows version. </span></span>",
+  "<span class=\"color2\">For a list of available commands, type</span> <span class=\"command\">'help'</span><span class=\"color2\"><span class=\"color2\"> Or type </span> <span class=\"command\">'windows'</span><span class=\"color2\"><span class=\"color2\"> For Windows Version. </span></span>",
 ];
