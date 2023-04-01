@@ -183,7 +183,7 @@ function commander(cmd) {
       loopLines(help, "color2 margin", 80);
       break;
 	  case "version":
-      addLine("ASCODES v2.8.0", "color2", 80);
+      addLine("ASCODES v3.0.2", "color2", 80);
       setTimeout(function() {
       },800); 
       break;
@@ -282,9 +282,9 @@ function commander(cmd) {
       addLine("Opening Phone Number...", "color2", 0);
       newTab(phone);
       break;
-	  case "website":
-      addLine("Opening Website...", "color2", 0);
-      newTab(website);
+	  case "windows":
+      addLine("Starting Windows Sadqi...", "color2", 0);
+      newTab(windows);
       break;
 	 case "curl":
       addLine("Opening Website...", "color2", 0);
