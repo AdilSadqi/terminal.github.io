@@ -43,7 +43,7 @@ weather = [
 
 
 
-update = [
+update1 = [
 			"<br>",
 			"Checking for updates...",
 			"Downloading update...",
@@ -132,12 +132,12 @@ help = [
   '<span class="command">email</span>          Do not email me ;)',
   '<span class="command">clear</span>          Clear terminal',
   '<span class="command">banner</span>         Display the header',
+  '<span class="command">update</span>         Update terminal',
   "<br>",
 ];
 
 root = [
   "<br>",
-  '<span class="command">update</span>         Update terminal',
   '<span class="command">close</span>          Close this page',
   '<span class="command">exit</span>           Exit from terminal',
   '<span class="command">history</span>        View command history',
