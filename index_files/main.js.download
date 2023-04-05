@@ -179,9 +179,15 @@ function commander(cmd) {
 	 case "update":
       addLine("Opening Updater...", "color2", 80);
       setTimeout(function() {
-        window.open('/update');
-      }, 1000); 
-      break;
+      var url = '/update';
+      var win = window.open(url, '_self');
+      if (win) {
+      win.addEventListener('load', function() {
+        win.document.documentElement.requestFullscreen();
+        });
+      }
+     }, 1000); 
+     break;
 	case "sudo":
 	  addLine("Oh no, you're not admin...", "color2", 80);
 	  addLine("---------------------------","color2", 80);
