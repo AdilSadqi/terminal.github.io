@@ -7,7 +7,7 @@ var Adil = "Adil";
 var ADIL = "ADIL";
 var jaber = "jaber";
 var whatsapp = "https://wa.link/p8dhsa";
-var phone = "tel:+212624489471";
+var phone = "tel:+212722409137";
 var email = 'mailto:adil@asadqi.com';
 var website = 'https://win.asadqi.com';
 var cloud = "https://cloud.asadqi.com";
@@ -81,7 +81,7 @@ update1 = [
 
 whoami = [
   "<br>",
-  "The paradox of “Who am I?” is: we never know, but, we constantly find out.",
+  "The paradox of “Who am I?” is: we never know, but we constantly find out.",
   "<br>"
 ];
 
@@ -90,8 +90,7 @@ social = [
 
   'discord        <a href="' + discord + '" target="_blank">discord/adilsadqi' + '</a>',
   'instagram      <a href="' + instagram + '" target="_blank">instagram/adilsadqi' + '</a>',
-  'twitter        <a href="' + twitter + '" target="_blank">twitter/adilsadqi' + '</a>',
-  'whatsapp       <a href="' + whatsapp + '" target="_blank">whatsapp/adilsadqi' + "</a>",
+  'twitter (X)    <a href="' + twitter + '" target="_blank">twitter/adilsadqi' + '</a>',
   'phone          <a href="' + phone + '" target="_blank">phone/number' + "</a>",
 
   
@@ -132,6 +131,7 @@ help = [
   '<span class="command">email</span>          Do not email me ;)',
   '<span class="command">clear</span>          Clear terminal',
   '<span class="command">banner</span>         Display the header',
+  '<span class="command">ip</span>             View your public ip address',
   '<span class="command">update</span>         Update terminal',
   "<br>",
 ];
@@ -148,6 +148,12 @@ root = [
   '<span class="command">creator</span>        Author and creator of this terminal',
   '<span class="command">sadqi</span>          Look for specific name in Sadqi family',
   '<span class="command">weather</span>        Check local weather in realtime',
+  '<span class="command">cv</span>             View or Download Curriculum Vitae',
+  '<span class="command">ip</span>             View your public ip address',
+  '<span class="command">time</span>           Your Current Local Time',
+  '<span class="command">destroy</span>        Will Destroy this website',
+  '<span class="command">pin</span>            Will Generate pins for you',
+  '<span class="command">whatsapp</span>       To open chat with me',
   "<br>",
 ]
 
@@ -165,6 +171,7 @@ banner = [
   "                                                                     ",
 
   "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
-  '<span class="color2">Welcome to my interactive web terminal.</span>',
-  "<span class=\"color2\">For a list of available commands, type</span> <span class=\"command\">'help'</span><span class=\"color2\"><span class=\"color2\"> Or type </span> <span class=\"command\">'windows'</span><span class=\"color2\"><span class=\"color2\"> For Windows Version. </span></span>",
+    '<audio src="Sound.mp3" preload="auto"></audio>',
+    '<span class="color2">Welcome to my interactive web terminal.</span>',
+    "<span class=\"color2\">For a list of available commands, type</span> <span class=\"command\">'help'</span><span class=\"color2\"><span class=\"color2\"> Or type </span> <span class=\"command\">'windows'</span><span class=\"color2\"><span class=\"color2\"> For Windows Version. </span></span>",
 ];

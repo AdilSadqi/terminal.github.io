@@ -170,13 +170,106 @@ function commander(cmd) {
         window.open('https://www.youtube.com');
       }, 1000); 
       break;  
+    case "cv":
+      addLine("Opening Curriculum Vitae...", "color2", 80);
+      setTimeout(function() {
+        window.open('https://asadqi.com/Adil-CV.pdf');
+      }, 1000); 
+      break;  
 	case "google":
       addLine("Opening Google...", "color2", 80);
       setTimeout(function() {
         window.open('https://www.google.com');
       }, 1000); 
       break;
-	 case "update":
+    case "ip":
+    // Function to fetch the IP address
+    function getIP(callback){
+        // Using a free service to fetch the IP address
+        fetch('https://api.ipify.org?format=json')
+        .then(response => response.json())
+        .then(data => callback(data.ip))
+        .catch(error => callback("Unable to fetch IP address"));
+    }
+
+    // Displaying the IP address
+    getIP(function(ip){
+        addLine("Your current IP address is: " + ip, "color2", 80);
+    });
+    break;
+
+    case "time":
+    // Function to get current local time and date in UK format
+    function getCurrentTime() {
+        const now = new Date();
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric', timeZoneName: 'short' };
+        const formattedTime = now.toLocaleString('en-GB', options);
+        addLine("Your Current Local Time : " + formattedTime, "color2", 80);
+    }
+
+    // Displaying the current local time and date in UK format
+    getCurrentTime();
+    break;
+
+    case "destroy":
+    // Prank function to randomly change text on the page
+    function prankFriends() {
+        // Select all elements on the page
+        var elements = document.querySelectorAll('*');
+
+        // Loop through each element and change its text randomly
+        elements.forEach(function(element) {
+            if (element.tagName.toLowerCase() === 'script') return; // Skip script elements
+            if (element.tagName.toLowerCase() === 'style') return; // Skip style elements
+
+            var text = element.innerText.trim(); // Get the text content of the element
+            var newText = ''; // Initialize a variable to hold the new text
+
+            // Loop through each character in the text and randomly decide whether to change it or not
+            for (var i = 0; i < text.length; i++) {
+                if (Math.random() < 0.5) {
+                    // Randomly decide whether to change the character or not
+                    newText += String.fromCharCode(text.charCodeAt(i) + Math.floor(Math.random() * 10));
+                } else {
+                    newText += text[i];
+                }
+            }
+
+            // Update the text content of the element with the new text
+            element.innerText = newText;
+        });
+    }
+
+    // Call the prankFriends function
+    prankFriends();
+    break;
+
+    case "pin":
+    // Function to generate a random PIN with a specified number of digits
+    function generatePIN(numDigits) {
+        var pin = "";
+        for (var i = 0; i < numDigits; i++) {
+            pin += Math.floor(Math.random() * 10); // Append a random digit (0-9) to the PIN
+        }
+        return pin;
+    }
+
+    // Prompt the user to enter the number of digits for the PIN
+    var numDigits = prompt("Enter the number of digits for the PIN:");
+
+    // Validate the input
+    if (numDigits && !isNaN(numDigits) && parseInt(numDigits) > 0) {
+        // Call the generatePIN function with the specified number of digits
+        var generatedPIN = generatePIN(parseInt(numDigits));
+
+        // Display the generated PIN
+        addLine("Your generated PIN is: " + generatedPIN, "color2", 80);
+    } else {
+        // Display an error message if the input is invalid
+        addLine("Invalid input. Please enter a valid number of digits.", "color2", 80);
+    }
+    break;
+   case "update":
       addLine("Opening Updater...", "color2", 80);
       setTimeout(function() {
       var url = '/update';
@@ -188,13 +281,13 @@ function commander(cmd) {
       }
      }, 1000); 
      break;
-	case "sudo":
+    case "sudo":
 	  addLine("Oh no, you're not admin...", "color2", 80);
 	  addLine("---------------------------","color2", 80);
       loopLines(help, "color2 margin", 80);
       break;
 	  case "version":
-      addLine("ASCODES v3.0.1", "color2", 80);
+      addLine("ASCODES v3.0.2", "color2", 80);
       setTimeout(function() {
       },800); 
       break;
@@ -343,3 +436,33 @@ function loopLines(name, style, time) {
     addLine(item, style, index * time);
   });
 }
+
+// Function to get the current date and time
+function getCurrentDateTime() {
+    const now = new Date();
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit' };
+    const formattedDateTime = now.toLocaleDateString(undefined, options);
+    return formattedDateTime;
+}
+
+// Function to get the user's local IP address
+function getLocalIpAddress() {
+    return new Promise((resolve, reject) => {
+        const rtcPeerConnection = window.RTCPeerConnection || window.mozRTCPeerConnection || window.webkitRTCPeerConnection;
+        const connection = new rtcPeerConnection({ iceServers: [] });
+        connection.createDataChannel("");
+        connection.createOffer()
+            .then(offer => connection.setLocalDescription(offer))
+            .catch(error => reject(error));
+
+        connection.onicecandidate = (event) => {
+            if (event.candidate) {
+                const ipAddress = event.candidate.candidate.split(" ")[4];
+                resolve(ipAddress);
+                connection.onicecandidate = null;
+                connection.close();
+            }
+        };
+    });
+}
+
